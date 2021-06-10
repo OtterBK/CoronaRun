@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:shape="rectangle" >
+
+    <!-- 테두리 내부 색상 설정 -->
+    <solid android:color="@color/bg_gray" />
+    <!-- 둥근 테두리 -->
+    <corners
+        android:bottomLeftRadius="12dp"
+        android:bottomRightRadius="12dp"
+        android:topLeftRadius="12dp"
+        android:topRightRadius="12dp" />
+    <!-- 테두리 내부 여백 설정 -->
+    <padding
+        android:bottom="-1dp"
+        android:right="-1dp"
+        android:left="-1dp"/>
+
+    <!-- 테두리 설정: 두께, 색상 -->
+    <stroke
+        android:width="1dp"
+        android:color="@color/fr_drakGray" />
+
+</shape>
+

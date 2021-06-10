@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">코로나런</string>
+    <string name="no_permission_msg" />
+    <string name="research_msg">현재 위치에서 재검색</string>
+</resources>

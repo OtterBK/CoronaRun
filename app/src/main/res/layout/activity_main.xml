@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_compare"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ripple_custom"
+        android:text="감염률/\n백신접종률"
+        android:textColor="@color/bg_white"
+        android:textSize="24sp"
+        app:backgroundTint="@color/fr_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/btn_find_center"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ripple_custom"
+        android:text="예방 접종\n센터 확인"
+        android:textColor="@color/bg_white"
+        android:textSize="24sp"
+        app:backgroundTint="@color/fr_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/btn_coronaPrevent"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="228dp"
+        android:background="@drawable/ripple_custom"
+        android:text="코로나19\n예방수칙"
+        android:textColor="@color/bg_white"
+        android:textSize="24sp"
+        app:backgroundTint="@color/fr_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/btn_vaccineInfo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="228dp"
+        android:background="@drawable/ripple_custom"
+        android:text="백신\n정보"
+        android:textColor="@color/bg_white"
+        android:textSize="24sp"
+        app:backgroundTint="@color/fr_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="348dp"
+        android:layout_height="310dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="67dp"
+        android:background="@drawable/bg_gray_with_bubble"
+        app:layout_constraintBottom_toTopOf="@+id/btn_find_center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="294dp"
+            android:layout_height="118dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/title" />
+
+        <TextView
+            android:id="@+id/lbl_today"
+            android:layout_width="162dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="157dp"
+            android:layout_marginBottom="11dp"
+            android:gravity="center"
+            android:text="06. 03 금"
+            android:textColor="@color/fr_drakGray"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/toolbar2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bubbleborder"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_today" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="102dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="208dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="일일 확진자수"
+            android:textColor="@color/fr_drakGray"
+            app:layout_constraintBottom_toTopOf="@+id/lbl_todayInfected"
+            app:layout_constraintEnd_toStartOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="99dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="208dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="일일 접종완료"
+            android:textColor="@color/fr_drakGray"
+            app:layout_constraintBottom_toTopOf="@+id/lbl_todayVaccine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_todayInfected"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginBottom="22dp"
+            android:gravity="center"
+            android:text="▲ 0"
+            android:textColor="@color/fr_red"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/lbl_todayVaccine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/lbl_todayVaccine"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginRight="47dp"
+            android:layout_marginBottom="22dp"
+            android:gravity="center"
+            android:text="▲ 0"
+            android:textColor="@color/fr_darkBlue"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lbl_todayInfected"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.naver.maps.map.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="367dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="512dp"
+            android:background="@drawable/bubbleborder"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toTopOf="@+id/btn_book_vaccine2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_research"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="97dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/bg_singlepaint"
+            android:gravity="center"
+            android:text="@string/research_msg"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_research2"
+            app:layout_constraintTop_toTopOf="@+id/toolbar3" />
+
+        <Button
+            android:id="@+id/btn_research2"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/reply"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar3"
+            app:layout_constraintEnd_toStartOf="@+id/btn_research"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolbar3" />
+
+        <Button
+            android:id="@+id/btn_book_vaccine1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/vaccine_icon"
+            android:gravity="center"
+            android:textColor="@color/fr_drakGray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_book_vaccine2" />
+
+        <TextView
+            android:id="@+id/btn_book_vaccine2"
+            android:layout_width="75dp"
+            android:layout_height="31dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_gray_with_bubbleborder"
+            android:gravity="center"
+            android:text="백신 예약"
+            android:textColor="@color/fr_drakGray"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btn_book_vaccine1"
+            app:layout_constraintEnd_toEndOf="@+id/btn_book_vaccine1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_book_vaccine1"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

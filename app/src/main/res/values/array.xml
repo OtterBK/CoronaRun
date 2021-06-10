@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name ="info">
+        <item>확진자</item>
+        <item>당일 1차 백신 접종률</item>
+        <item>당일 2차 백신 접종률</item>
+        <item>누적 1차 백신 접종률</item>
+        <item>누적 2차 백신 접종률</item>
+    </string-array>
+</resources>
